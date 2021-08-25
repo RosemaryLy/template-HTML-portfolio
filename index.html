@@ -5,38 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ken Pink Technical Writer and Web Developer</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Jane Smith | Front End Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./menu-toggle.js"></script>
 </head>
 
 <body>
-    <nav>
-        <div class="logo">Ken Pink | Technical Writer and Web Developer</div>
-        <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/">Resume</a>
-            <a href="/">Portfolio</a>
-            <a href="/">Contact</a>
-        </div>
+    <!-- Navigation Menu Start-->
+    <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="http://127.0.0.1:5500/index.html">
+              Jane Smith | Front End Developer
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item">
+                    Resume
+                  </a>
+            
+                  <a class="navbar-item">
+                    Portfolio
+                  </a>
+                  <a class="navbar-item">
+                    Contact
+                  </a>
+            </div>
+          </div>
     </nav>
-    <section class="hero">
-        <div class="hero-container">
-            <div class="column-left">
-                <h1>Hi, my name is Ken</h1>
+    <!-- Navigation Menu End-->
+    <!-- Hero Section Start -->
+    <section class="hero is-halfheight">
+        <div class="container is-fluid">
+            <div class="columns">
+                <div class="column is-align-self-center">
+                    <div class="content is-med">
+                    <h1>Hi, my name is Jane</h1>
                 <p>
-                    I am a technical writer, content manager and web developer
+                    I am Front End Developer and mechanical keyboard enthuiast!
                 </p>
-                <button><a href="#about">Learn More</a></button>
-            </div>
-            <div class="column-right">
-                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_omdtysgw.json"
-                    background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay>
+                <a class="button is-info is-outlined" href="#about">Learn More</a>
+                </div>
+                </div>
+                <div class="column">
+                    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_omdtysgw.json"
+                    background="transparent" speed="1" style="width: 100%; height: 500px;" loop autoplay>
                 </lottie-player>
-            </div>
-        </div>
-    </section>
-    <section class="about">
+                </div>
+              </div>
+          </div>
+      </section>
+      <!-- Hero Section End -->
+      <!-- About Section Start-->
+      <section class="about">
         <div class="about-container">
             <div class="column-left-about">
                 <img src="assets/about-coder.svg" alt="coder thinking about code" width="500" height="500">
@@ -50,6 +79,7 @@
             </div>
         </div>
     </section>
+      <!-- About End -->
     <div class="container">
         <div id="timeline">
                 <div class="timeline-item">
