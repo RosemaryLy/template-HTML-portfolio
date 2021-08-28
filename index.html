@@ -8,13 +8,14 @@
     <title>Jane Smith | Front End Developer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./menu-toggle.js"></script>
 </head>
 
 <body>
     <!-- Navigation Menu Start-->
-    <nav class="navbar is-transparent">
+    <nav class="navbar is-transparent" id="top">
         <div class="navbar-brand">
             <a class="navbar-item" href="http://127.0.0.1:5500/index.html">
               Jane Smith | Front End Developer
@@ -29,14 +30,14 @@
         
           <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item">
+                <a class="navbar-item has-text-info">
                     Resume
                   </a>
             
-                  <a class="navbar-item">
+                  <a class="navbar-item has-text-info">
                     Portfolio
                   </a>
-                  <a class="navbar-item" href="#contact">
+                  <a class="navbar-item has-text-info" href="#contact">
                     Contact
                   </a>
             </div>
@@ -90,27 +91,25 @@
     </section>
 
       <!-- Timeline Start -->
-    <div class="container">
+    <div class="timeline-container">
+        <h2>My Experience</h2>
         <div id="timeline">
                 <div class="timeline-item">
                     <div class="timeline-icon">
-                        <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
                     </div>
                     <div class="timeline-content">
-                        <h2>LOREM IPSUM DOLOR</h2>
+                        <h3>September 2012 - May 2016</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
+                           Bachelor of Design in User Experience Design, Wilfred Laurier University 
                         </p>
                     </div>
                 </div>
         
                 <div class="timeline-item">
                     <div class="timeline-icon">
-                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
                     </div>
                     <div class="timeline-content right">
-                        <h2>LOREM IPSUM DOLOR</h2>
+                        <h3>LOREM IPSUM DOLOR</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi  ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
                         </p>
@@ -119,11 +118,9 @@
         
                 <div class="timeline-item">
                     <div class="timeline-icon">
-                        <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
-                        <i class="fa fa-free-code-camp fa-2x simi-i"></i>
                     </div>
                     <div class="timeline-content">
-                        <h2>LOREM IPSUM DOLOR</h2>
+                        <h3>LOREM IPSUM DOLOR</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
                         </p>
@@ -153,6 +150,28 @@
                 </div>
             </div>
         </section>
+        <footer class="footer">
+            <div class="content has-text-centered">
+            <span class="icon is-large">
+                <a href="#top" class="has-text-grey-light">
+                <i class="far fa-arrow-alt-circle-up fa-2x"></i>
+                </a>
+              </span>
+            </div>
+            <div class="content has-text-centered">
+            <span class="icon is-large">
+                <i class="fab fa-github fa-2x"></i>
+              </span>
+              <span class="icon is-large">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </span>
+              <span class="icon is-large">
+                <i class="fab fa-codepen fa-2x"></i>
+              </span>
+              <hr>
+              <p>©2021 Jane Doe</p>
+            </div>
+        </footer>
 </body>
 
 </html>
