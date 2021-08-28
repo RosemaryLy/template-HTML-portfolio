@@ -5,4 +5,4 @@ It is also fully responsive as well.
 
 ## Demo 
 
-[sample-demo.png]
+![](sample-demo.png)
