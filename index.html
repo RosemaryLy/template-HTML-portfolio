@@ -5,74 +5,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ken Pink Technical Writer and Web Developer</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Jane Smith | Front End Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./menu-toggle.js"></script>
 </head>
 
 <body>
-    <nav>
-        <div class="logo">Ken Pink | Technical Writer and Web Developer</div>
-        <div class="nav-items">
-            <a href="/">Home</a>
-            <a href="/">Resume</a>
-            <a href="/">Portfolio</a>
-            <a href="/">Contact</a>
-        </div>
+    <!-- Navigation Menu Start-->
+    <nav class="navbar is-transparent" id="top">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="http://127.0.0.1:5500/index.html">
+              Jane Smith | Front End Developer
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item has-text-info">
+                    Resume
+                  </a>
+            
+                  <a class="navbar-item has-text-info">
+                    Portfolio
+                  </a>
+                  <a class="navbar-item has-text-info" href="#contact">
+                    Contact
+                  </a>
+            </div>
+          </div>
     </nav>
-    <section class="hero">
-        <div class="hero-container">
-            <div class="column-left">
-                <h1>Hi, my name is Ken</h1>
+  
+    <!-- Hero Section Start -->
+    <section class="hero is-halfheight">
+        <div class="container is-fluid">
+            <div class="columns">
+                <div class="column is-align-self-center">
+                    <div class="content is-med">
+                    <h1>Hi, my name is <strong style="color:#00b0ff">Jane</strong></h1>
                 <p>
-                    I am a technical writer, content manager and web developer
+                    I am Front End Developer and mechanical keyboard enthuiast!
                 </p>
-                <button><a href="#about">Learn More</a></button>
-            </div>
-            <div class="column-right">
-                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_omdtysgw.json"
-                    background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay>
+                <a class="button is-info is-outlined is-rounded" href="#about">Learn More</a>
+                </div>
+                </div>
+                <div class="column">
+                    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_omdtysgw.json"
+                    background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay>
                 </lottie-player>
+                </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- About Section Start-->
+      <section class="section is-med" id="about">
+        <div class="container is-fluid">
+            <div class="columns">
+                <div class="column">
+                    <figure class="image is-5by4">
+                        <img src="./assets/about-coder.svg" alt="thinking coder">
+                      </figure>
+                </div>
+                <div class="column is-align-self-center">
+                <div class="content is-med">
+                    <h2>About Me</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus atque impedit esse vel ipsa eligendi facere eaque hic ipsam natus molestiae odio vero cupiditate maiores delectus, quaerat suscipit officiis. Soluta!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque unde libero ipsa adipisci earum facilis officia voluptate nostrum tempora vel similique, sequi explicabo placeat cumque et doloremque, totam consectetur saepe.
+                </p>
+                <a class="button is-info is-outlined is-rounded" href="#">My Resume</a>
+                <a class="button is-info is-outlined is-rounded" href="#about">My Portfolio</a>
+                </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="about">
-        <div class="about-container">
-            <div class="column-left-about">
-                <img src="assets/about-coder.svg" alt="coder thinking about code" width="500" height="500">
-            </div>
-            <div class="column-right-about">
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error voluptate hic vitae esse ullam earum
-                    fugiat recusandae quae asperiores provident eaque sunt necessitatibus qui, incidunt tempora mollitia
-                    beatae, praesentium modi!</p>
-                <button>Learn More</button>
-            </div>
-        </div>
-    </section>
-    <div class="container">
+
+      <!-- Timeline Start -->
+    <div class="timeline-container">
+        <h2>My Experience</h2>
         <div id="timeline">
                 <div class="timeline-item">
                     <div class="timeline-icon">
-                        <!--img src="assets/images/star.svg" alt=""-->
-                        <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
                     </div>
                     <div class="timeline-content">
-                        <h2>LOREM IPSUM DOLOR</h2>
+                        <h3>September 2012 - May 2016</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
+                           Bachelor of Design in User Experience Design, Wilfred Laurier University 
                         </p>
                     </div>
                 </div>
         
                 <div class="timeline-item">
                     <div class="timeline-icon">
-                        <!--img src="assets/images/book.svg" alt=""-->
-                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
                     </div>
                     <div class="timeline-content right">
-                        <h2>LOREM IPSUM DOLOR</h2>
+                        <h3>LOREM IPSUM DOLOR</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi  ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
                         </p>
@@ -81,35 +118,60 @@
         
                 <div class="timeline-item">
                     <div class="timeline-icon">
-                        <!--img src="assets/images/star.svg" alt=""-->
-                        <!--i class="fa fa-cog fa-spin fa-3x fa-fw"></i-->
-                        <i class="fa fa-free-code-camp fa-2x simi-i"></i>
                     </div>
                     <div class="timeline-content">
-                        <h2>LOREM IPSUM DOLOR</h2>
+                        <h3>LOREM IPSUM DOLOR</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
                         </p>
                     </div>
                 </div>
             </div>
-            <!-- Timeline ends here -->
         </div>
-        </div>
-        <section class="contact">
-            <div class="contact-container">
-                <div class="column-left">
-                    <h1>Let's work together!</h1>
+         <!-- Contact Section -->
+        <section class="section is-med" id="contact">
+            <div class="container is-fluid">
+                <div class="columns">
+                    <div class="column is-align-self-center">
+                    <div class="content is-med">
+                        <h2>Let's Work Together!</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius nam et numquam soluta laborum placeat deserunt doloribus dolores atque, sint doloremque corrupti ullam quam! Ab accusamus laboriosam totam expedita doloremque.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus atque impedit esse vel ipsa eligendi facere eaque hic ipsam natus molestiae odio vero cupiditate maiores delectus, quaerat suscipit officiis. Soluta!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque unde libero ipsa adipisci earum facilis officia voluptate nostrum tempora vel similique, sequi explicabo placeat cumque et doloremque, totam consectetur saepe.
                     </p>
-                    <button><a href="#">Contact Me</a></button>
-                </div>
-                <div class="column-right">
-                    <img src="assets/SeaShip-day.gif" alt=sailboat-at-sea-in-daytime>
+                    <a class="button is-info is-outlined is-rounded" href="#">Contact Me</a>
+                    </div>
+                    </div>
+                    <div class="column">
+                        <figure class="image is-5by4">
+                            <img src="./assets//SeaShip-day.gif" alt="sailboat in the day time">
+                          </figure>
+                    </div>
                 </div>
             </div>
         </section>
+        <footer class="footer">
+            <div class="content has-text-centered">
+            <span class="icon is-large">
+                <a href="#top" class="has-text-grey-light">
+                <i class="far fa-arrow-alt-circle-up fa-2x"></i>
+                </a>
+              </span>
+            </div>
+            <div class="content has-text-centered">
+            <span class="icon is-large">
+                <i class="fab fa-github fa-2x"></i>
+              </span>
+              <span class="icon is-large">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </span>
+              <span class="icon is-large">
+                <i class="fab fa-codepen fa-2x"></i>
+              </span>
+              <hr>
+              <p>©2021 Jane Doe</p>
+            </div>
+        </footer>
 </body>
 
 </html>
