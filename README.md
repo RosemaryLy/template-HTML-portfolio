@@ -1,2 +1,2 @@
 # template-HTML-portfolio
-Just a basic portfolio template that uses HTML and CSS.
+Just a basic portfolio template that uses HTML, CSS and Bulma
