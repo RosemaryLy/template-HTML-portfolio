@@ -25,6 +25,14 @@ hr{
    transform: translate(0, -10px);
 }
 
+.card-footer a{
+   color: darkgrey;
+}
+
+.card-footer a:hover{
+   color: #00b0ff;
+}
+
 //TimeLine Styling
 .timeline-container {
   margin: 0;
